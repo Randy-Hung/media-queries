@@ -3,12 +3,16 @@
 }
 body {
     width: 100%;
-    padding: 20px;
+    padding: 0;
+    margin: 0;
 }
 .page-wrapper{
     display: flex;
     flex-direction: column;
-    /*width: 100%;*/
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    width: 100%;
 }
 
 .alert-info {
@@ -16,7 +20,7 @@ body {
     padding: 16px;
     text-align: center;
     border: solid grey;
-    width: 100%;
+    width: 91%;
 }
 
 img{
@@ -33,33 +37,45 @@ h1 {
     font-size: 50px;
     margin-top: 10px;
 }
-
-.nav {
-    width: 100%;
+nav {
+    width:91%;
 }
 
+.nav-links {
+    flex-direction: column;
+
+
+}
+.combine{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 .nav-links li {
+    display: flex;
+    justify-content: center;
     padding: 16px;
     margin-top: 10px;
     background: lightgrey;
-    text-align: center;
-    flex-basis: 100%;
     list-style: none;
-    width: 100%; 
+    width: 100%;
     
 }
-
-
-ul{
+ul.nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
     padding: 0;
-    
-    
+    width: 100%;
 }
 
 .combine-para {
     display: flex;
     flex-direction: column;
+
 }
 
 .main{
@@ -88,7 +104,6 @@ display: flex;
 justify-content: end;
 }
 
-
 /* Large devices (large desktops, 1200px and up) */
 /* width of divs should be 25% */
 
@@ -110,14 +125,23 @@ justify-content: end;
     .nav-links {
         display: flex;
         flex-direction: row;
-        /*    justify-content: flex-end;*/
+            justify-content: flex-end;
         /*}*/
     }
-
+    ul.nav-links{
+        display: flex;
+        justify-content: flex-end;
+    }
     .nav-links li {
         background: none;
+        padding: 0;
+        width: auto;
+        margin-left: 10px;
+        margin-right: 10px;
     }
-
+    nav{
+        width: 50%;
+    }
     .combine-para {
         flex-direction: row;
     }
@@ -128,6 +152,7 @@ justify-content: end;
        width: 30%;
     }
     footer {
+        width: 100%;
         display: flex;
         justify-content: space-between;
     }
