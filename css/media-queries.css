@@ -1,7 +1,44 @@
 *{
     font-family: "Poppins", sans-serif;
 }
+body {
+    padding: 16px;
+}
+
+.alert-info {
+    background: #D6FEFE;
+    padding: 16px;
+    text-align: center;
+    border: solid grey;
+}
+
+.alert-info a {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 10px;
+}
+.nav {
+    display: flex;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-links li {
+    padding: 16px;
+    margin-top: 10px;
+    background: lightgrey;
+    text-align: center;
+    flex-basis: 100%;
+}
 ul{
     list-style: none;
     padding: 0;
 }
+
