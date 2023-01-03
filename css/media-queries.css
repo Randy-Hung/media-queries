@@ -1,197 +1,151 @@
-*{
-    font-family: "Poppins", sans-serif;
+* {
+    box-sizing: border-box;
 }
+
 body {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-.page-wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 16px;
-    width: 100%;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    font-family: sans-serif;
+    width: 358px;
+    height: 884px;
+    margin: 16px;
 }
 
 .alert-info {
+    display: flex;
     background: #D6FEFE;
+    justify-content: center;
     padding: 16px;
-    text-align: center;
-    border: solid grey;
-    width: 91%;
-}
-
-img{
-    width: 100%;
-    height: auto;
+    border: solid lightgrey 2px;
 }
 
 .alert-info a {
     text-decoration: none;
+    color: black;
 }
 
 h1 {
     text-align: center;
     font-size: 50px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
+
 nav {
-    width:91%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .nav-links {
-    flex-direction: column;
-
-
-}
-.combine{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-.nav-links li {
-    display: flex;
-    justify-content: center;
-    padding: 16px;
-    margin-top: 10px;
-    background: lightgrey;
-    list-style: none;
-    width: 100%;
-    
-}
-ul.nav-links{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     list-style: none;
     padding: 0;
+    margin-top: 0;
     width: 100%;
 }
 
-.combine-para {
+.nav-links li {
     display: flex;
-    flex-direction: column;
-
+    background: lightgrey;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 20px;
 }
 
-.main{
-    width: 100%;
-}
-.sub-section{
-    width: 100%;
-} 
-
-.key-image{
-    float:right;
-    width: 30px;
+.header-imp {
     height: 100%;
 }
 
-footer{
+.header-img img{
+    width: 358px;
+}
+
+.sub-section {
+    font-style: italic;
+    font-size: 12px;
+    width: 320px;
+}
+
+section p {
+    font-size: 13px;
+}
+
+footer {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    align-items: end;
+    height: 100px;
 }
 
+@media screen and (min-width: 768px){
 
-.keys{
-margin-left: 50px;
-display: flex;
-justify-content: end;
-}
-
-/* Large devices (large desktops, 1200px and up) */
-/* width of divs should be 25% */
-
-@media screen and (min-width: 1200px) {
     .alert-info {
         display: none;
     }
 
-    body{
-        width: 100%;
+    body {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-wrap: wrap;
+        /*flex-direction: column;*/
+        height: auto;
+        width: 788px;
     }
 
+    h1 {
+        height: 50px;
+        margin-bottom: 50px;
     }
-    .page-wrapper{
-        
-        width: 80%;
-    }
-    .combine{
+
+    nav {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
+        width: 560px;
+        height: 50px;
+        margin: 0;
     }
 
-    /*h1 {*/
-    /*    display: flex;*/
-    /*    justify-content: flex-start;*/
+    .nav-links li {
+        display: flex;
+        margin: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        background: none;
+        font-size: 18px;
+        height: 50px;
+        align-items: flex-end;
+    }
 
-    /*}*/
     .nav-links {
         display: flex;
         flex-direction: row;
-            justify-content: flex-end;
-        /*}*/
+        justify-content: end;
     }
-    ul.nav-links{
+
+    .header-img {
         display: flex;
-        justify-content: flex-end;
+        flex-direction: column;
+        margin-bottom: 20px;
     }
-    .nav-links li {
-        background: none;
-        padding: 0;
-        width: auto;
-        margin-left: 10px;
-        margin-right: 10px;
+
+    .header-img img {
+        width: 788px;
     }
-    nav{
-        width: 50%;
+
+    section p {
+        font-size: 19px;
     }
-    .combine-para {
-        flex-direction: row;
+
+    section.main {
+        width: 60%;
+        margin-right: 40px;
     }
-    .main {
-        width: 70%;
-    }
+
     .sub-section {
-       width: 30%;
+        width: 33%;
     }
+
     footer {
-
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        
+        height: 300px;
     }
-
-    .combine-footer{
-        height: 100%;
-        width: 100%;
-    }
-    .header-img{
-        width: 100%;
-        
-    }
-    img{
-        width: 100%;
-    }
-
- .combine-footer{
-    margin-top: 8em;
- }
-
-
- .combine-para{
-    margin-top: 1em;
-    margin-bottom: 10em;
- }
-
- 
+}
